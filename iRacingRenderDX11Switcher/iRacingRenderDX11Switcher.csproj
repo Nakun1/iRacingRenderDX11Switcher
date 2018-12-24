@@ -7,7 +7,7 @@
     <ProjectGuid>{3D94E63C-C146-41ED-9241-C46C46BCEB36}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>iRacingRenderDX11Switcher</RootNamespace>
-    <AssemblyName>iRacingRenderDX11Switcher</AssemblyName>
+    <AssemblyName>iRacingEcranVR</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <PublishUrl>publish\</PublishUrl>
