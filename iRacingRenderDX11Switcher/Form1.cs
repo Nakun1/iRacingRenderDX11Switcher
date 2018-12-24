@@ -6,7 +6,8 @@
     using System.Windows.Forms;
 
     /// <summary>
-    /// L'appli en elle même, de type Winform juste pour avoir les messagebox.
+    /// Créé par Nakuni (http://simracing.nakuni.com).
+    /// Diffusion et modifications libres, mais citer la source ça fait toujours plaisir ;)
     /// </summary>
     public partial class Form1 : Form
     {
