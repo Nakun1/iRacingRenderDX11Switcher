@@ -126,17 +126,22 @@
                     {
                         lignesRendererDX11[i] = lignesRendererDX11[i].Replace("1", "0");
                     }
+
+                    if (lignesRendererDX11[i].Length >= 13 && lignesRendererDX11[i].Substring(0, 13) == "OpenVREnabled")
+                    {
+                        lignesRendererDX11[i] = lignesRendererDX11[i].Replace("1", "0");
+                    }
                 }
 
                 File.WriteAllLines(path, lignesRendererDX11);
             }
             catch (FileNotFoundException)
             {
-                MessageBox.Show("Fichier non trouvé dans " + path);
+                throw new Exception("Fichier non trouvé dans " + path);
             }
             catch (Exception e)
             {
-                MessageBox.Show("Erreur." + e);
+                throw new Exception("Erreur." + e);
             }
         }
 
@@ -156,17 +161,21 @@
                     {
                         lignesRendererDX11[i] = lignesRendererDX11[i].Replace("0", "1");
                     }
-                }
 
+                    if (lignesRendererDX11[i].Length >= 13 && lignesRendererDX11[i].Substring(0, 13) == "OpenVREnabled")
+                    {
+                        lignesRendererDX11[i] = lignesRendererDX11[i].Replace("0", "1");
+                    }
+                }
                 File.WriteAllLines(path, lignesRendererDX11);
             }
             catch (FileNotFoundException)
             {
-                MessageBox.Show("Fichier non trouvé dans " + path);
+                throw new Exception("Fichier non trouvé dans " + path);
             }
             catch (Exception e)
             {
-                MessageBox.Show("Erreur." + e);
+                throw new Exception("Erreur." + e);
             }
         }
     }
